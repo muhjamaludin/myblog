@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>My Blogs</title>
+        <title>Blog Muhjamaludin</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <body class="homepage">
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">My Blogs</a>
+                <a class="navbar-brand" href=".">Blog Muhjamaludin</a>
 
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -49,8 +49,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#how-to-deploy-on-github-pages" class="nav-link">How to Deploy on Github Pages</a>
+            <li class="nav-item" data-level="1"><a href="#blog-mas-muhjamaludin" class="nav-link">Blog Mas Muhjamaludin</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#bagaimana-men-deploy-mkdocs-di-github-pages" class="nav-link">Bagaimana men-deploy Mkdocs di Github Pages</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -58,25 +62,32 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="how-to-deploy-on-github-pages">How to Deploy on Github Pages</h2>
+<h1 id="blog-mas-muhjamaludin">Blog Mas Muhjamaludin</h1>
+<p>catatan dan jurnal dari pembelajaran <em>programming</em>-ku.</p>
+<h2 id="bagaimana-men-deploy-mkdocs-di-github-pages">Bagaimana men-<em>deploy</em> <strong>Mkdocs</strong> di <em>Github Pages</em></h2>
 <p>27 August 2023</p>
 <ul>
-<li>create new repository on github</li>
-<li>push project to github with origin branch name</li>
-<li>use built in deploy to github page</li>
+<li>membuat repository baru di github</li>
+<li><em>push project</em> / catatan ke repository github dengan nama <em>remote</em> <strong>origin</strong></li>
+<li>melakukan deploy ke <em>branch gh-pages</em> menggunakan fitur built in <strong>mkdocs</strong>. Mkdocs akan melakukan <em>generate</em> <em>static web</em> dengan format komponen <em><a href="https://jekyllrb.com/">jekyll</a></em>. </li>
 </ul>
 <pre><code class="language-shell">    $ mkdocs gh-deploy
 </code></pre>
 <ul>
-<li>if your account is free, make sure that your repository is public so you can use github pages for free too.</li>
-<li>on your repository, go to </li>
+<li>jika akun github kamu gratis (bukan enterprise), pastikan bahwa repository dalam <em>visibility</em>: <em><strong>public</strong></em>, karena fitur <em>github pages</em> hanya bisa dipakai untuk repository publik atau <em>Enterprise</em>.</li>
+<li>pada repository, pergi ke menu</li>
 </ul>
 <pre><code>  setting &gt; Pages &gt; Build and deployment &gt; Branch &gt; gh-pages &gt; /root &gt; save
 </code></pre>
 <ul>
-<li>your site has deploy on <code>&lt;your github&gt;/&lt;your repository&gt;</code></li>
-<li>for updating, you can add your update script / docs &gt; commit and run again deploy to github pages <code>mkdocs gh-deploy</code></li>
-</ul></div>
+<li>situs kamu akan di deploy di <code>&lt;https://yourname.github.io&gt;/&lt;your-repository&gt;</code></li>
+<li>untuk melakukan update script / dokumentasi, kamu bisa melakukan perubahan kemudian </li>
+</ul>
+<pre><code>git add
+git commit
+git push origin main
+</code></pre>
+<p>dan lakukan deploy seperti langkah diatas <code>mkdocs gh-deploy</code>.</p></div>
             </div>
         </div>
 
@@ -159,5 +170,5 @@
 
 <!--
 MkDocs version : 1.5.2
-Build Date UTC : 2023-08-27 16:36:26.318770+00:00
+Build Date UTC : 2023-08-27 16:57:41.580399+00:00
 -->
