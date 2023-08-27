@@ -15,3 +15,12 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+## How to Deploy on Github Pages
+
+* create new repository on github
+* push project to github with origin branch name
+* use built in deploy to github page
+```shell
+    $ mkdocs gh-deploy
+```
